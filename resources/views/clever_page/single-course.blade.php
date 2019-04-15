@@ -9,13 +9,13 @@
     <!-- The above 4 meta tags *Must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Clever - Education &amp; Courses Template | Single Course</title>
+    <title>Sci-Tech Institute | Single Course</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="icon" href="clever_temp/img/core-img/favicon.ico">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="clever_temp/style.css">
 
 </head>
 
@@ -29,85 +29,10 @@
     <header class="header-area">
 
         <!-- Top Header Area -->
-        <div class="top-header-area d-flex justify-content-between align-items-center">
-            <!-- Contact Info -->
-            <div class="contact-info">
-                <a href="#"><span>Phone:</span> +44 300 303 0266</a>
-                <a href="#"><span>Email:</span> info@clever.com</a>
-            </div>
-            <!-- Follow Us -->
-            <div class="follow-us">
-                <span>Follow us</span>
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            </div>
-        </div>
+        @include('topheader');
 
         <!-- Navbar Area -->
-        <div class="clever-main-menu">
-            <div class="classy-nav-container breakpoint-off">
-                <!-- Menu -->
-                <nav class="classy-navbar justify-content-between" id="cleverNav">
-
-                    <!-- Logo -->
-                    <a class="nav-brand" href="/"><img src="clever_temp/img/core-img/STIlogo.png" alt=""></a>
-
-                    <!-- Navbar Toggler -->
-                    <div class="classy-navbar-toggler">
-                        <span class="navbarToggler"><span></span><span></span><span></span></span>
-                    </div>
-
-                    <!-- Menu -->
-                    <div class="classy-menu">
-
-                        <!-- Close Button -->
-                        <div class="classycloseIcon">
-                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                        </div>
-
-                        <!-- Nav Start -->
-                        <div class="classynav">
-                            <ul>
-                                <li><a href="{{URL('/')}}">Home</a></li>
-                                <li><a href="#">Pages</a>
-                                    <ul class="dropdown">
-                                        <li><a href="{{URL('/')}}">Home</a></li>
-                                        <li><a href="{{URL('/courses')}}">Courses</a></li>
-                                        <li><a href="{{URL('/single-course')}}">Single Courses</a></li>
-                                        <li><a href="{{URL('/instructors')}}">Instructors</a></li>
-                                        <li><a href="{{URL('/blog')}}">Blog</a></li>
-                                        <li><a href="{{URL('/blog-details')}}">Single Blog</a></li>
-                                        <li><a href="{{URL('/regular-page')}}">Regular Page</a></li>
-                                        <li><a href="{{URL('/about')}}">Contact</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="{{URL('/courses')}}">Courses</a></li>
-                                <li><a href="{{URL('/instructors')}}">Instructors</a></li>
-                                <li><a href="{{URL('/blog')}}">Blog</a></li>
-                                <li><a href="{{URL('/about')}}">Contact</a></li>
-                            </ul>
-
-                            <!-- Search Button -->
-                            <div class="search-area">
-                                <form action="#" method="post">
-                                    <input type="search" name="search" id="search" placeholder="Search">
-                                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                                </form>
-                            </div>
-
-                            <!-- Register / Login -->
-                            <div class="register-login-area">
-                                <a href="#" class="btn">Register</a>
-                                <a href="index-login.html" class="btn active">Login</a>
-                            </div>
-
-                        </div>
-                        <!-- Nav End -->
-                    </div>
-                </nav>
-            </div>
-        </div>
+        @include('main-nav');
     </header>
     <!-- ##### Header Area End ##### -->
 
@@ -126,7 +51,7 @@
     <!-- ##### Breadcumb Area End ##### -->
 
     <!-- ##### Single Course Intro Start ##### -->
-    <div class="single-course-intro d-flex align-items-center justify-content-center" style="background-image: url(img/bg-img/bg3.jpg);">
+    <div class="single-course-intro d-flex align-items-center justify-content-center" style="background-image: url(clever_temp/img/bg-img/bg3.jpg);">
         <!-- Content -->
         <div class="single-course-intro-content text-center">
             <!-- Ratings -->
@@ -137,7 +62,7 @@
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
             </div>
-            <h3>English Grammar</h3>
+            <h3>Book a course</h3>
             <div class="meta d-flex align-items-center justify-content-center">
                 <a href="#">Sarah Parker</a>
                 <span><i class="fa fa-circle" aria-hidden="true"></i></span>
@@ -194,7 +119,7 @@
                                                 <div class="col-lg-6">
                                                     <div class="single-instructor d-flex align-items-center mb-30">
                                                         <div class="instructor-thumb">
-                                                            <img src="img/bg-img/t1.png" alt="">
+                                                            <img src="clever_temp/img/bg-img/t1.png" alt="">
                                                         </div>
                                                         <div class="instructor-info">
                                                             <h5>Sarah Parker</h5>
@@ -207,7 +132,7 @@
                                                 <div class="col-lg-6">
                                                     <div class="single-instructor d-flex align-items-center mb-30">
                                                         <div class="instructor-thumb">
-                                                            <img src="img/bg-img/t2.png" alt="">
+                                                            <img src="clever_temp/img/bg-img/t2.png" alt="">
                                                         </div>
                                                         <div class="instructor-info">
                                                             <h5>Sarah Parker</h5>
@@ -220,7 +145,7 @@
                                                 <div class="col-lg-6">
                                                     <div class="single-instructor d-flex align-items-center mb-30">
                                                         <div class="instructor-thumb">
-                                                            <img src="img/bg-img/t3.png" alt="">
+                                                            <img src="clever_temp/img/bg-img/t3.png" alt="">
                                                         </div>
                                                         <div class="instructor-info">
                                                             <h5>Sarah Parker</h5>
@@ -233,7 +158,7 @@
                                                 <div class="col-lg-6">
                                                     <div class="single-instructor d-flex align-items-center mb-30">
                                                         <div class="instructor-thumb">
-                                                            <img src="img/bg-img/t4.png" alt="">
+                                                            <img src="clever_temp/img/bg-img/t4.png" alt="">
                                                         </div>
                                                         <div class="instructor-info">
                                                             <h5>Sarah Parker</h5>
@@ -831,54 +756,20 @@
     <!-- ##### Courses Content End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area">
-        <!-- Top Footer Area -->
-        <div class="top-footer-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <!-- Footer Logo -->
-                        <div class="footer-logo">
-                            <a href="index.html"><img src="img/core-img/logo2.png" alt=""></a>
-                        </div>
-                        <!-- Copywrite -->
-                        <p><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Bottom Footer Area -->
-        <div class="bottom-footer-area d-flex justify-content-between align-items-center">
-            <!-- Contact Info -->
-            <div class="contact-info">
-                <a href="#"><span>Phone:</span> +44 300 303 0266</a>
-                <a href="#"><span>Email:</span> info@clever.com</a>
-            </div>
-            <!-- Follow Us -->
-            <div class="follow-us">
-                <span>Follow us</span>
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            </div>
-        </div>
-    </footer>
+            @include('main_footer');
     <!-- ##### Footer Area End ##### -->
 
     <!-- ##### All Javascript Script ##### -->
     <!-- jQuery-2.2.4 js -->
-    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="clever_temp/js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
-    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="clever_temp/js/bootstrap/popper.min.js"></script>
     <!-- Bootstrap js -->
-    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="clever_temp/js/bootstrap/bootstrap.min.js"></script>
     <!-- All Plugins js -->
-    <script src="js/plugins/plugins.js"></script>
+    <script src="clever_temp/js/plugins/plugins.js"></script>
     <!-- Active js -->
-    <script src="js/active.js"></script>
+    <script src="clever_temp/js/active.js"></script>
 </body>
 
 </html>

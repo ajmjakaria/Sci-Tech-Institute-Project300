@@ -1,0 +1,1 @@
+@include('clever_page.courses');

@@ -7,13 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *Must* come first in the head; any other head content must come *after* these tags -->
-
+    <!-- Favicon -->
+    <link rel="icon" href="clever_temp/img/core-img/favicon.ico">
     <!-- Title -->
     <title>Home</title>
     <!-- Stylesheet -->
     <link rel="stylesheet" href="clever_temp/style.css">
-    <!-- Favicon -->
-    <link rel="icon" href="clever_temp/img/core-img/favicon.ico">
+    
 
     
 
@@ -29,87 +29,10 @@
     <header class="header-area">
 
         <!-- Top Header Area -->
-        <div class="top-header-area d-flex justify-content-between align-items-center">
-            <!-- Contact Info -->
-            <div class="contact-info">
-                <a href="#"><span>Phone:</span> +44 300 303 0266</a>
-                <a href="#"><span>Email:</span> scitechinstitute2017@gmail.com</a>
-            </div>
-            <!-- Follow Us -->
-            <div class="follow-us">
-                <span>Follow us</span>
-                <a href="https://www.facebook.com/ScitechInstitute2017/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            </div>
-        </div>
+        @include('topheader')
 
         <!-- Navbar Area -->
-        <div class="clever-main-menu">
-            <div class="classy-nav-container breakpoint-off">
-                <!-- Menu -->
-                <nav class="classy-navbar justify-content-between" id="cleverNav">
-
-                    <!-- Logo -->
-                    <a class="nav-brand" href="/"><img src="clever_temp/img/core-img/STIlogo.png" alt=""></a>
-
-                    <!-- Navbar Toggler -->
-                    <div class="classy-navbar-toggler">
-                        <span class="navbarToggler"><span></span><span></span><span></span></span>
-                    </div>
-
-                    <!-- Menu -->
-                    <div class="classy-menu">
-
-                        <!-- Close Button -->
-                        <div class="classycloseIcon">
-                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                        </div>
-
-                        <!-- Nav Start -->
-                        <div class="classynav">
-                            <ul>
-                                <li><a href="{{URL('/')}}">Home</a></li>
-                                <li><a href="#">Pages</a>
-                                    <ul class="dropdown">
-                                        <li><a href="{{URL('/')}}">Home</a></li>
-                                        <li><a href="{{URL('/courses')}}">Courses</a></li>
-                                        <li><a href="{{URL('/single-course')}}">Single Courses</a></li>
-                                        <li><a href="{{URL('/instructors')}}">Instructors</a></li>
-                                        <li><a href="{{URL('/blog')}}">Blog</a></li>
-                                        <li><a href="{{URL('/blog-details')}}">Single Blog</a></li>
-                                        <li><a href="{{URL('/regular-page')}}">Regular Page</a></li>
-                                        <li><a href="{{URL('/about')}}">Contact</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="{{URL('/courses')}}">Courses</a></li>
-                                <li><a href="{{URL('/instructors')}}">Instructors</a></li>
-                                <li><a href="{{URL('/blog')}}">Blog</a></li>
-                                <li><a href="{{URL('/about')}}">Contact</a></li>
-                            </ul>
-
-                            <!-- Search Button -->
-                            <div class="search-area">
-                                <form action="#" method="post">
-                                    <input type="search" name="search" id="search" placeholder="Search">
-                                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                                </form>
-                            </div>
-
-                            <!-- Register / Login -->
-                            <div class="register-login-area">
-                                <a href="{{URL('/register')}}" class="btn">Register</a>
-                                <!--<a href="index-login.html" class="btn active">Login</a>-->
-                                <a href="{{URL('/login')}}" class="btn active">Login</a>
-                                
-                            </div>
-
-                        </div>
-                        <!-- Nav End -->
-                    </div>
-                </nav>
-            </div>
-        </div>
+        @include('nav')
     </header>
     <!-- ##### Header Area End ##### -->
 
@@ -122,7 +45,7 @@
                     <div class="hero-content text-center">
                         <h3 style="color:yellow;">You are browsing the best resource for Online Education</h3>
                         <h2>Let's Study Together</h2>
-                        <a href="#" class="btn clever-btn">Get Started</a>
+                        <a href="/courses" class="btn clever-btn">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -135,7 +58,7 @@
             <div class="single-blog-area mb-300 wow fadeInUp" data-wow-delay="250ms">
                         <!-- Blog Content -->
                     <div class="blog-content">
-                        <p><h5 style = "color: black;font-family: sans-serif;border-style: solid 1px;">Sci-Tech Institute originated from the idea that there exists a class of readers who respond better to online content and prefer to learn new skills at their own pace from the comforts of their drawing rooms. The journey commenced with a single tutorial on C language(Bangla) in 2017 and elated by the response it generated, we worked our way to adding fresh tutorials to our repository which now proudly flaunts a wealth of tutorials and allied articles on topics ranging from programming languages to web designing to academics and much more.</h5></p>
+                        <p><h5 style = "color: black;font-family: sans-serif;border-style: solid 1px;"><b style ="color:blue;">Sci-Tech Institute</b> originated from the idea that there exists a class of readers who respond better to online content and prefer to learn new skills at their own pace from the comforts of their drawing rooms. The journey commenced with a single tutorial on C language(Bangla) in 2017 and elated by the response it generated, we worked our way to adding fresh tutorials to our repository which now proudly flaunts a wealth of tutorials and allied articles on topics ranging from programming languages to web designing to academics and much more.</h5></p>
                 </div>
             </div>
         </div>
@@ -246,7 +169,8 @@
                                 </div>
                             </div>
                             <div class="course-fee h-100">
-                                <a href="#" class="free">Free</a>
+                                <!--<a href="/Cprogramming" class="free">Free</a>-->
+                                <a href="https://www.youtube.com/watch?v=l8JWLyFs8F8&list=PLnnAePzjfPm-qfRIjMC4yBnO_wR82e1vB" class = "free">watch video</a>
                             </div>
                         </div>
                     </div>
@@ -255,6 +179,7 @@
                 <!-- Single Popular Course -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-popular-course mb-100 wow fadeInUp" data-wow-delay="500ms">
+                        <a href="/javaprogramming1">
                         <img src="clever_temp/img/prog-icon/java-icon2.png" alt="">
                         <!-- Course Content -->
                         <div class="course-content"> 
@@ -277,7 +202,7 @@
                                 </div>
                             </div>
                             <div class="course-fee h-100">
-                                <a href="#">$20</a>
+                                <a href="https://www.youtube.com/watch?v=XjwTPNKs6Tc&list=PLV3rqOvr9vgkmELwlSouvJtROQ6MWRbIH" class="free">WATCH</a>
                             </div>
                         </div>
                     </div>
@@ -308,7 +233,7 @@
                                 </div>
                             </div>
                             <div class="course-fee h-100">
-                                <a href="#">$45</a>
+                                <a href="https://www.youtube.com/watch?v=0T4mPpbNs_8&list=PLgH5QX0i9K3q0ZKeXtF--CZ0PdH1sSbYL" class="free">WATCH</a>
                             </div>
                         </div>
                     </div>
@@ -324,7 +249,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading">
-                        <h3>The Best Tutors in Town</h3>
+                        <h3>Our Tutors</h3>
                     </div>
                 </div>
             </div>
@@ -337,15 +262,15 @@
                         <div class="single-tutors-slides">
                             <!-- Tutor Thumbnail -->
                             <div class="tutor-thumbnail">
-                                <img src="clever_temp/img/bg-img/t1.png" alt="">
+                                <img src="clever_temp/img/bg-img/Jakaria1.jpg" alt="">
                             </div>
                             <!-- Tutor Information -->
                             <div class="tutor-information text-center">
-                                <h5>Alex Parker</h5>
+                                <h5>Abu Jafar Md Jakaria</h5>
                                 <span>Teacher</span>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum laoreet elit, sit amet tincidunt mauris ultrices vitae.</p>
                                 <div class="social-info">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="https://www.facebook.com/ajm.jakaria"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                     <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                     <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                 </div>
@@ -356,15 +281,15 @@
                         <div class="single-tutors-slides">
                             <!-- Tutor Thumbnail -->
                             <div class="tutor-thumbnail">
-                                <img src="img/bg-img/t2.png" alt="">
+                                <img src="clever_temp/img/bg-img/rsz_konia1.jpg" alt="">
                             </div>
                             <!-- Tutor Information -->
                             <div class="tutor-information text-center">
-                                <h5>Alex Parker</h5>
+                                <h5>Jaima Jaman Konia</h5>
                                 <span>Teacher</span>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum laoreet elit, sit amet tincidunt mauris ultrices vitae.</p>
                                 <div class="social-info">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="https://www.facebook.com/jaima.jaman"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                     <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                     <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                 </div>
@@ -375,45 +300,7 @@
                         <div class="single-tutors-slides">
                             <!-- Tutor Thumbnail -->
                             <div class="tutor-thumbnail">
-                                <img src="clever_temp/img/bg-img/t3.png" alt="">
-                            </div>
-                            <!-- Tutor Information -->
-                            <div class="tutor-information text-center">
-                                <h5>Alex Parker</h5>
-                                <span>Teacher</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum laoreet elit, sit amet tincidunt mauris ultrices vitae.</p>
-                                <div class="social-info">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Tutors Slide -->
-                        <div class="single-tutors-slides">
-                            <!-- Tutor Thumbnail -->
-                            <div class="tutor-thumbnail">
-                                <img src="img/bg-img/t4.png" alt="">
-                            </div>
-                            <!-- Tutor Information -->
-                            <div class="tutor-information text-center">
-                                <h5>Alex Parker</h5>
-                                <span>Teacher</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum laoreet elit, sit amet tincidunt mauris ultrices vitae.</p>
-                                <div class="social-info">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Tutors Slide -->
-                        <div class="single-tutors-slides">
-                            <!-- Tutor Thumbnail -->
-                            <div class="tutor-thumbnail">
-                                <img src="img/bg-img/t5.png" alt="">
+                                <img src="clever_temp/img/bg-img/t4.png" alt="">
                             </div>
                             <!-- Tutor Information -->
                             <div class="tutor-information text-center">
@@ -515,7 +402,7 @@
                                 <p><i class="fa fa-clock"></i> August 26 @ 9:00 am</p>
                             </div>
                             <div class="events-fee">
-                                <a href="#">$45</a>
+                                <a href="#" class="free">Free</a>
                             </div>
                         </div>
                     </div>
@@ -557,7 +444,7 @@
                                 <p><i class="fa fa-clock"></i> August 3 @ 9:00 am</p>
                             </div>
                             <div class="events-fee">
-                                <a href="#">$45</a>
+                                <a href="#" class="free">Free</a>
                             </div>
                         </div>
                     </div>
@@ -622,43 +509,7 @@
     <!-- ##### Blog Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area">
-        <!-- Top Footer Area -->
-        <div class="top-footer-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <!-- Footer Logo 
-                        <div class="footer-logo">
-                            <a href="index.html"><img src="clever_tem/img/core-img/logo2.png" alt=""></a>
-                        </div>-->
-                        <!-- Copywrite -->
-                        <p><!--<a href="#"> Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | 
-<h4 style = "color: blue;"> Sci-tech Institute </h4>
-<!--This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Bottom Footer Area -->
-        <div class="bottom-footer-area d-flex justify-content-between align-items-center">
-            <!-- Contact Info -->
-            <div class="contact-info">
-                <a href="#"><span>Phone:</span> +44 300 303 0266</a>
-                <a href="#"><span>Email:</span> info@clever.com</a>
-            </div>
-            <!-- Follow Us -->
-            <div class="follow-us">
-                <span>Follow us</span>
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            </div>
-        </div>
-    </footer>
+        @include('main_footer');
     <!-- ##### Footer Area End ##### -->
 
     <!-- ##### All Javascript Script ##### -->

@@ -27,7 +27,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img class="logo-custom" src="assets/img/logo180-50.png" alt=""  /></a>
+                <a class="navbar-brand" href="/"><img class="logo-custom" src="clever_temp/img/core-img/STIlogo.png" alt=""  /></a>
             </div>
             <div class="navbar-collapse collapse move-me">
                 <ul class="nav navbar-nav navbar-right">
@@ -55,11 +55,11 @@
                         <li>
                               <h3>Delivering Quality Education</h3>
                            <h1>THE UNIQUE METHOD</h1>
-                            <a  href="#features-sec" class="btn btn-info btn-lg" >
-                                GET AWESOME 
+                            <a  href="{{URL('/courses-category')}}" class="btn btn-info btn-lg" >
+                                GET STARTED 
                             </a>
-                             <a  href="#features-sec" class="btn btn-success btn-lg" >
-                                FEATURE LIST
+                             <a  href="{{URL('/blog')}}" class="btn btn-success btn-lg" >
+                                BLOG
                             </a>
                         </li>
                         <!-- End Slider 01 -->
@@ -200,10 +200,10 @@
                
                  <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
                      <div class="faculty-div">
-                     <img src="assets/img/faculty/1.jpg"  class="img-rounded" />
-                   <h3 >ROXI CHI LUENA </h3>
+                     <img src="clever_temp/img/bg-img/rsz_Jakaria1.jpg"  class="img-rounded" />
+                   <h3 >ABU JAFAR MD JAKARIA</h3>
                  <hr />
-                         <h4>Desigining <br /> Department</h4>
+                         <h4>Sport Programmer<br /> Devoloping</h4>
                    <p >
                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                         Aenean commodo . 
@@ -213,10 +213,10 @@
                    </div>
                  <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
                      <div class="faculty-div">
-                     <img src="assets/img/faculty/2.jpg"  class="img-rounded" />
-                   <h3 >JANE DEO ALEX</h3>
+                     <img src="clever_temp/img/bg-img/rsz_konia1.jpg"  class="img-rounded" />
+                   <h3 >JAIMA JAMAN KONIA</h3>
                  <hr />
-                         <h4>Enginering <br /> Department</h4>
+                         <h4>Sport Programmer<br /> Designing</h4>
                    <p >
                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                         Aenean commodo . 
@@ -245,7 +245,7 @@
       <div id="course-sec" class="container set-pad">
              <div class="row text-center">
                  <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
-                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">OUR COURSES </h1>
+                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">WE PROVIDE </h1>
                      <p data-scroll-reveal="enter from the bottom after 0.3s">
                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                         Aenean commodo.
@@ -372,11 +372,11 @@
 
                     <h2 ><strong>Our Location </strong></h2>
         <hr />
-                    <div ">
-                        <h4>234/80 -UFG , New Street,</h4>
-                        <h4>Switzerland.</h4>
+                    <div>
+                        <h4>Nababi Masjid Market, Akhalia</h4>
+                        <h4>Sylhet, Bangladesh.</h4>
                         <h4><strong>Call:</strong>  + 67-098-907-1269 / 70 / 71 </h4>
-                        <h4><strong>Email: </strong>info@yourdomain.com</h4>
+                        <h4><strong>Email: </strong>scitechinstitute2017@gmail.com</h4>
                     </div>
 
 
@@ -386,7 +386,7 @@
                     <h2 ><strong>Social Conectivity </strong></h2>
         <hr />
                     <div >
-                        <a href="#">  <img src="assets/img/Social/facebook.png" alt="" /> </a>
+                        <a href="https://www.facebook.com/ScitechInstitute2017/">  <img src="assets/img/Social/facebook.png" alt="" /> </a>
                      <a href="#"> <img src="assets/img/Social/google-plus.png" alt="" /></a>
                      <a href="#"> <img src="assets/img/Social/twitter.png" alt="" /></a>
                     </div>
@@ -397,7 +397,8 @@
                  </div>
      <!-- CONTACT SECTION END-->
     <div id="footer">
-          &copy 2014 yourdomain.com | All Rights Reserved |  <a href="http://binarytheme.com" style="color: #fff" target="_blank">Design by : binarytheme.com</a>
+          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | 
+<h4 style = "color: blue;"> Sci-tech Institute </h4>
     </div>
      <!-- FOOTER SECTION END-->
    

@@ -1,0 +1,1 @@
+index7.blade.php

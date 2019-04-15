@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="clever_temp/style.css">
 </head>
 <body>
     <div id="app">
@@ -33,7 +34,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
+                   <ul class="navbar-nav mr-auto">
 
                     </ul>
 

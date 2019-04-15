@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="clever_temp/style.css">
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +10,14 @@
     <!-- The above 4 meta tags *Must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Clever - Education &amp; Courses Template | Courses</title>
+    <title>Sci-Tech Institute|Courses</title>
 
     <!-- Favicon -->
     <link rel="icon" href="clever_temp/img/core-img/favicon.ico">
 
     <!-- Stylesheet <link rel="stylesheet" href="{{ asset('clever_temp/style.css') }}">-->
     
-    <link rel="stylesheet" href="clever_temp/style.css">
+    
 
 </head>
 
@@ -30,85 +31,10 @@
     <header class="header-area">
 
         <!-- Top Header Area -->
-        <div class="top-header-area d-flex justify-content-between align-items-center">
-            <!-- Contact Info -->
-            <div class="contact-info">
-                <a href="#"><span>Phone:</span> +44 300 303 0266</a>
-                <a href="#"><span>Email:</span> info@clever.com</a>
-            </div>
-            <!-- Follow Us -->
-            <div class="follow-us">
-                <span>Follow us</span>
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            </div>
-        </div>
+        @include('topheader');
 
         <!-- Navbar Area -->
-        <div class="clever-main-menu">
-            <div class="classy-nav-container breakpoint-off">
-                <!-- Menu -->
-                <nav class="classy-navbar justify-content-between" id="cleverNav">
-
-                    <!-- Logo -->
-                    <a class="nav-brand" href="/"><img src="clever_temp/img/core-img/STIlogo.png" alt=""></a>
-
-                    <!-- Navbar Toggler -->
-                    <div class="classy-navbar-toggler">
-                        <span class="navbarToggler"><span></span><span></span><span></span></span>
-                    </div>
-
-                    <!-- Menu -->
-                    <div class="classy-menu">
-
-                        <!-- Close Button -->
-                        <div class="classycloseIcon">
-                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                        </div>
-
-                        <!-- Nav Start -->
-                        <div class="classynav">
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="#">Pages</a>
-                                    <ul class="dropdown">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="courses.html">Courses</a></li>
-                                        <li><a href="single-course.html">Single Courses</a></li>
-                                        <li><a href="instructors.html">Instructors</a></li>
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="blog-details.html">Single Blog</a></li>
-                                        <li><a href="regular-page.html">Regular Page</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="courses.html">Courses</a></li>
-                                <li><a href="instructors.html">Instructors</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-
-                            <!-- Search Button -->
-                            <div class="search-area">
-                                <form action="#" method="post">
-                                    <input type="search" name="search" id="search" placeholder="Search">
-                                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                                </form>
-                            </div>
-
-                            <!-- Register / Login -->
-                            <div class="register-login-area">
-                                <a href="#" class="btn">Register</a>
-                                <a href="#" class="btn active">Login</a>
-                            </div>
-
-                        </div>
-                        <!-- Nav End -->
-                    </div>
-                </nav>
-            </div>
-        </div>
+        @include('main-nav');
     </header>
     <!-- ##### Header Area End ##### -->
 
@@ -119,15 +45,15 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/">Home</a></li>
                 <li class="breadcrumb-item"><a href="#">Courses</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Art &amp; Design</li>
+                <li class="breadcrumb-item active" aria-current="page">Online courses</li>
             </ol>
         </nav>
     </div>
     <!-- ##### Breadcumb Area End ##### -->
 
     <!-- ##### Catagory ##### -->
-    <div class="clever-catagory bg-img d-flex align-items-center justify-content-center p-3" style="background-image: url(img/bg-img/bg2.jpg);">
-        <h3>Art &amp; Design</h3>
+    <div class="clever-catagory bg-img d-flex align-items-center justify-content-center p-3" style="background-image: url(clever_temp/img/bg-img/bg2.jpg);">
+        <h3>Free Online courses<br> Bangla &amp; English</h3>
     </div>
 
     <!-- ##### Popular Course Area Start ##### -->
@@ -140,13 +66,14 @@
                         <img src="img/bg-img/c1.jpg" alt="">
                         <!-- Course Content -->
                         <div class="course-content">
-                            <h4>English Grammar</h4>
+                            <h4>Learn Python</h4>
                             <div class="meta d-flex align-items-center">
-                                <a href="#">Sarah Parker</a>
+                                <a href="#">Abu Jafar Md Jakaria</a>
                                 <span><i class="fa fa-circle" aria-hidden="true"></i></span>
-                                <a href="#">Art &amp; Design</a>
+                                <a href="#">Web developing</a>
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis</p>
+
                         </div>
                         <!-- Seat Rating Fee -->
                         <div class="seat-rating-fee d-flex justify-content-between">
@@ -159,7 +86,9 @@
                                 </div>
                             </div>
                             <div class="course-fee h-100">
-                                <a href="#" class="free">Free</a>
+                               <!-- <a href="#" class="free">Free</a>-->
+                               <a href="https://www.youtube.com/watch?v=_uQrJ0TkZlc" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+
                             </div>
                         </div>
                     </div>
@@ -168,14 +97,14 @@
                 <!-- Single Popular Course -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-popular-course mb-100 wow fadeInUp" data-wow-delay="500ms">
-                        <img src="img/bg-img/c2.jpg" alt="">
+                        <img src="/img/prog-icon/java-icon2.png" alt="">
                         <!-- Course Content -->
                         <div class="course-content">
-                            <h4>Vocabulary</h4>
+                            <h4>Learn Java</h4>
                             <div class="meta d-flex align-items-center">
                                 <a href="#">Sarah Parker</a>
                                 <span><i class="fa fa-circle" aria-hidden="true"></i></span>
-                                <a href="#">Art &amp; Design</a>
+                                <a href="#">Android &amp; Mobile</a>
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis</p>
                         </div>
@@ -190,7 +119,8 @@
                                 </div>
                             </div>
                             <div class="course-fee h-100">
-                                <a href="#">$20</a>
+                                <a href="https://www.youtube.com/watch?v=grEKMHGYyns" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                                
                             </div>
                         </div>
                     </div>
@@ -199,14 +129,14 @@
                 <!-- Single Popular Course -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-popular-course mb-100 wow fadeInUp" data-wow-delay="750ms">
-                        <img src="img/bg-img/c3.jpg" alt="">
+                        <img src="/img/prog-icon/C-icon.png" alt="">
                         <!-- Course Content -->
                         <div class="course-content">
-                            <h4>Expository writing</h4>
+                            <h4>Learn C Programming</h4>
                             <div class="meta d-flex align-items-center">
                                 <a href="#">Sarah Parker</a>
                                 <span><i class="fa fa-circle" aria-hidden="true"></i></span>
-                                <a href="#">Art &amp; Design</a>
+                                <a href="#">Competitive Programming</a>
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis</p>
                         </div>
@@ -221,8 +151,7 @@
                                 </div>
                             </div>
                             <div class="course-fee h-100">
-                                <a href="#">$45</a>
-                            </div>
+                                <a href="https://www.youtube.com/watch?v=KJgsSFOSQv0" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>                            </div>
                         </div>
                     </div>
                 </div>
@@ -233,11 +162,11 @@
                         <img src="img/bg-img/c4.jpg" alt="">
                         <!-- Course Content -->
                         <div class="course-content">
-                            <h4>Vocabulary</h4>
+                            <h4>Learn C++</h4>
                             <div class="meta d-flex align-items-center">
                                 <a href="#">Sarah Parker</a>
                                 <span><i class="fa fa-circle" aria-hidden="true"></i></span>
-                                <a href="#">Art &amp; Design</a>
+                                <a href="#">Competitive Programming</a>
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis</p>
                         </div>
@@ -252,7 +181,7 @@
                                 </div>
                             </div>
                             <div class="course-fee h-100">
-                                <a href="#">$45</a>
+                                <a href="https://www.youtube.com/watch?v=vLnPwxZdW4Y" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>  
                             </div>
                         </div>
                     </div>
@@ -264,7 +193,7 @@
                         <img src="img/bg-img/c5.jpg" alt="">
                         <!-- Course Content -->
                         <div class="course-content">
-                            <h4>English Grammer</h4>
+                            <h4>Learn C#</h4>
                             <div class="meta d-flex align-items-center">
                                 <a href="#">Sarah Parker</a>
                                 <span><i class="fa fa-circle" aria-hidden="true"></i></span>
@@ -283,7 +212,7 @@
                                 </div>
                             </div>
                             <div class="course-fee h-100">
-                                <a href="#" class="free">Free</a>
+                                <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>  
                             </div>
                         </div>
                     </div>
@@ -295,11 +224,11 @@
                         <img src="img/bg-img/c6.jpg" alt="">
                         <!-- Course Content -->
                         <div class="course-content">
-                            <h4>Expository writing</h4>
+                            <h4>Learn HTML</h4>
                             <div class="meta d-flex align-items-center">
                                 <a href="#">Sarah Parker</a>
                                 <span><i class="fa fa-circle" aria-hidden="true"></i></span>
-                                <a href="#">Art &amp; Design</a>
+                                <a href="#">Web development</a>
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis</p>
                         </div>
@@ -314,7 +243,7 @@
                                 </div>
                             </div>
                             <div class="course-fee h-100">
-                                <a href="#">$45</a>
+                                <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>  
                             </div>
                         </div>
                     </div>
@@ -326,11 +255,11 @@
                         <img src="img/bg-img/c7.jpg" alt="">
                         <!-- Course Content -->
                         <div class="course-content">
-                            <h4>English Grammer</h4>
+                            <h4>Learn CSS</h4>
                             <div class="meta d-flex align-items-center">
                                 <a href="#">Sarah Parker</a>
                                 <span><i class="fa fa-circle" aria-hidden="true"></i></span>
-                                <a href="#">Art &amp; Design</a>
+                                <a href="#">Web development</a>
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis</p>
                         </div>
@@ -345,7 +274,7 @@
                                 </div>
                             </div>
                             <div class="course-fee h-100">
-                                <a href="#" class="free">Free</a>
+                                <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a> 
                             </div>
                         </div>
                     </div>
@@ -357,11 +286,11 @@
                         <img src="img/bg-img/c8.jpg" alt="">
                         <!-- Course Content -->
                         <div class="course-content">
-                            <h4>Vocabulary</h4>
+                            <h4>Learn JavaScript</h4>
                             <div class="meta d-flex align-items-center">
                                 <a href="#">Sarah Parker</a>
                                 <span><i class="fa fa-circle" aria-hidden="true"></i></span>
-                                <a href="#">Art &amp; Design</a>
+                                <a href="#">Web development</a>
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis</p>
                         </div>
@@ -376,7 +305,7 @@
                                 </div>
                             </div>
                             <div class="course-fee h-100">
-                                <a href="#">$20</a>
+                                <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a> 
                             </div>
                         </div>
                     </div>
@@ -388,7 +317,7 @@
                         <img src="img/bg-img/c9.jpg" alt="">
                         <!-- Course Content -->
                         <div class="course-content">
-                            <h4>Expository writing</h4>
+                            <h4>Learn XML</h4>
                             <div class="meta d-flex align-items-center">
                                 <a href="#">Sarah Parker</a>
                                 <span><i class="fa fa-circle" aria-hidden="true"></i></span>
@@ -407,7 +336,7 @@
                                 </div>
                             </div>
                             <div class="course-fee h-100">
-                                <a href="#">$45</a>
+                                <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a> 
                             </div>
                         </div>
                     </div>
@@ -426,41 +355,7 @@
     <!-- ##### Popular Course Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area">
-        <!-- Top Footer Area -->
-        <div class="top-footer-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <!-- Footer Logo -->
-                        <div class="footer-logo">
-                            <a href="index.html"><img src="img/core-img/logo2.png" alt=""></a>
-                        </div>
-                        <!-- Copywrite -->
-                        <p><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Bottom Footer Area -->
-        <div class="bottom-footer-area d-flex justify-content-between align-items-center">
-            <!-- Contact Info -->
-            <div class="contact-info">
-                <a href="#"><span>Phone:</span> +44 300 303 0266</a>
-                <a href="#"><span>Email:</span> info@clever.com</a>
-            </div>
-            <!-- Follow Us -->
-            <div class="follow-us">
-                <span>Follow us</span>
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            </div>
-        </div>
-    </footer>
+            @include('main_footer');
     <!-- ##### Footer Area End ##### -->
 
     <!-- ##### All Javascript Script ##### -->
